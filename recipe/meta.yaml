@@ -40,6 +40,7 @@ test:
     - tests
   commands:
     - pip check
+    # noxfile.py#L199
     - set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python     # [win]
     - export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python  # [not win]
     - pytest -vv tests
